@@ -236,7 +236,7 @@ export default function Home() {
               <img className="card-img-top" src="https://cdn2.unrealengine.com/buildmedia-balcony-1913x1076-44284fb2e62f.jpg?resize=1&w=400" alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">RESIDENTIAL</h5>
-                <p className="card-text">Buildmedia's real-time technology helps buyers fall in love with unbuilt homes</p>
+                <p className="card-text">Buildmedias real-time technology helps buyers fall in love with unbuilt homes</p>
                 <Link href="https://www.unrealengine.com/en-US/spotlights/real-time-technology-helps-buyers-fall-in-love-with-unbuilt-homesw" target="_blank" passHref legacyBehavior>
                   <a href="" className="btn1">
                     READ NOW
