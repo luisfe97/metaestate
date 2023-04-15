@@ -6,6 +6,7 @@ import { ethers } from "ethers";
 import { ConnectButton } from "web3uikit";
 import { connectWallet, mintNFT, getwalletTokens, getTokenMeta } from "../constants/web3.js";
 import Eth from "../public/Eth.svg";
+import Link from "next/link";
 
 //contrato
 import { abi, contractAddresses } from "../constants/pyto1/index";
@@ -53,28 +54,38 @@ export default function Home() {
   return (
     <>
       <header id="hero" className="header fixed-top">
-        <a href="index.html" className="logo d-flex align-items-center scrollto me-auto me-lg-0">
-          {/* Uncomment the line below if you also wish to use an image logo */}
-          {/* <img src="assets/img/logo.png" alt=""> */}
-          <h1>
-            Meta<span>Estate</span>
-          </h1>
-        </a>
+        <Link href={`/`} passHref legacyBehavior>
+          <a href="#" className="logo d-flex align-items-center scrollto me-auto me-lg-0">
+            {/* Uncomment the line below if you also wish to use an image logo */}
+            {/* <img src="assets/img/logo.png" alt=""> */}
+            <h1>
+              Meta<span>Estate</span>
+            </h1>
+          </a>
+        </Link>
         <div className="conectbutton">
           <ConnectButton moralisAuth={false} />
         </div>
         <nav>
           <div className="menu-link-container menu-link-container-1">
-            <a href="#">Home</a>
+            <Link href={`#`} passHref legacyBehavior>
+              <a href="">Home</a>
+            </Link>
           </div>
           <div className="menu-link-container menu-link-container-2">
-            <a href="#onfocus">Sobre Nosotros</a>
+            <Link href={`#onfocus`} passHref legacyBehavior>
+              <a href="">Sobre Nosotros</a>
+            </Link>
           </div>
           <div className="menu-link-container menu-link-container-3">
-            <a href="#portfolio">Soluciones</a>
+            <Link href={`#portfolio`} passHref legacyBehavior>
+              <a href="#portfolio">Soluciones</a>
+            </Link>
           </div>
           <div className="menu-link-container menu-link-container-4">
-            <a href="#contact">Contact</a>
+            <Link href={`#contact`} passHref legacyBehavior>
+              <a href="">Contact</a>
+            </Link>
           </div>
         </nav>
 
@@ -101,9 +112,8 @@ export default function Home() {
         </div>
         <div className="transition">
           <div className="lower-container">
-            <div className="div1">Lorem ipsum dolor </div>
-            <div className="div2"> sit amet, consectetur </div>
-            <div className="div3">adipiscing elit.</div>
+            <div className="div1">El futuro de los bienes raíces está aquí </div>
+            <p className="div2">by unrealengine</p>
           </div>
         </div>
         <div className="following-content">
@@ -115,7 +125,9 @@ export default function Home() {
         <div className="container-fluid p-0" data-aos="fade-up">
           <div className="row g-0">
             <div className="col-lg-6 video-play position-relative">
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" target="_blank" className="glightbox play-btn" />
+              <Link href="https://drive.google.com/file/d/1AH00e4DIXfvNIaDN3TJmdLhPdhZz4VSs/view?usp=share_link" target="_blank" passHref legacyBehavior>
+                <a href="" className="glightbox play-btn" />
+              </Link>
             </div>
             <div className="col-lg-6">
               <div className="content d-flex flex-column justify-content-center h-100">
@@ -197,9 +209,11 @@ export default function Home() {
               <div className="card-body">
                 <h5 className="card-title">RESIDENTIAL</h5>
                 <p className="card-text">Pureblink uses Unreal Engine to visualize real estate</p>
-                <a href="https://www.youtube.com/watch?v=1L8Zl1djnOw" target="_blank" className="btn1">
-                  WATCH NOW
-                </a>
+                <Link href="https://www.youtube.com/watch?v=1L8Zl1djnOw" target="_blank" passHref legacyBehavior>
+                  <a href="" className="btn1">
+                    WATCH NOW
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -209,9 +223,11 @@ export default function Home() {
               <div className="card-body">
                 <h5 className="card-title">MIXED USE</h5>
                 <p className="card-text">IMERZA transforms real-estate visualization with an XR-based digital twin</p>
-                <a href="https://www.unrealengine.com/en-US/spotlights/transforming-real-estate-visualization-with-an-xr-based-digital-twin-of-tampa" target="_blank" className="btn1">
-                  FIND OUT MORE
-                </a>
+                <Link href="https://www.unrealengine.com/en-US/spotlights/transforming-real-estate-visualization-with-an-xr-based-digital-twin-of-tampa" target="_blank" passHref legacyBehavior>
+                  <a href="" className="btn1">
+                    FIND OUT MORE
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -221,9 +237,11 @@ export default function Home() {
               <div className="card-body">
                 <h5 className="card-title">RESIDENTIAL</h5>
                 <p className="card-text">Buildmedia's real-time technology helps buyers fall in love with unbuilt homes</p>
-                <a href="https://www.unrealengine.com/en-US/spotlights/real-time-technology-helps-buyers-fall-in-love-with-unbuilt-homesw" target="_blank" className="btn1">
-                  READ NOW
-                </a>
+                <Link href="https://www.unrealengine.com/en-US/spotlights/real-time-technology-helps-buyers-fall-in-love-with-unbuilt-homesw" target="_blank" passHref legacyBehavior>
+                  <a href="" className="btn1">
+                    READ NOW
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -240,18 +258,18 @@ export default function Home() {
               <div className="cards d-flex row justify-content-between ">
                 <div className="d-flex row justify-content-center containers mt-5">
                   <div className="col-lg-4 col-mg-6-col-sm-10 img-card m-2">
-                    <a onClick={handleMintNFT} className="glightbox">
+                    <div onClick={handleMintNFT} className="glightbox">
                       <img src="https://www.construyehogar.com/wp-content/uploads/2014/06/Plano-de-apartamento-peque%C3%B1o-moderno-Tiziana-Caroleo-en-Pinterest.jpg" alt="" />
                       <div className="overlay">
                         <div className="text">Mint NFT</div>
                       </div>
-                    </a>
+                    </div>
                   </div>
                   <div className="col-lg-4 col-mg-6-col-sm-10 info m-2">
                     <h2>NFT By Metaestate</h2>
                     <p>NFT de prueba creado por MetaEstate</p>
                     <div className="col-md-6 col-8 ">
-                      <img src={Eth.src} width={20} className="mr-5"/>
+                      <img src={Eth.src} width={20} className="mr-5" />
                       ETH 0.1
                     </div>
                   </div>
@@ -272,18 +290,26 @@ export default function Home() {
 
         <div className="contact">
           <div className="tiles-container abs-center">
-            <a href="https://www.linkedin.com/in/nicole-geraldine-guzman-garc%C3%ADa-58958a17a/" target="_blank" className="contact-tiles facebook">
-              LINKEDIN
-            </a>
-            <a href="https://www.instagram.com/daniluquetv/" target="_blank" className="contact-tiles instagram">
-              INSTAGRAM
-            </a>
-            <a href="mailto: business@contract-sol.com" target="_blank" className="contact-tiles email">
-              E-MAIL
-            </a>
-            <a href="https://wa.me/+573208949771" target="_blank" className="contact-tiles telephone">
-              WHATSAPP
-            </a>
+            <Link href="https://www.linkedin.com/in/nicole-geraldine-guzman-garc%C3%ADa-58958a17a/" target="_blank" passHref legacyBehavior>
+              <a href="" className="contact-tiles facebook">
+                LINKEDIN
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/daniluquetv/" target="_blank" passHref legacyBehavior>
+              <a href="" className="contact-tiles instagram">
+                INSTAGRAM
+              </a>
+            </Link>
+            <Link href="mailto: business@contract-sol.com" passHref legacyBehavior>
+              <a href="" className="contact-tiles email">
+                E-MAIL
+              </a>
+            </Link>
+            <Link href="https://wa.me/+573208949771" target="_blank" passHref legacyBehavior>
+              <a href="https://wa.me/+573208949771" target="_blank" className="contact-tiles telephone">
+                WHATSAPP
+              </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -308,12 +334,16 @@ export default function Home() {
               </div>
             </div>
             <div className="social-links order-first order-lg-last mb-3 mb-lg-0">
-              <a href="#" className="instagram">
-                <i className="bi bi-instagram" />
-              </a>
-              <a href="#" className="linkedin">
-                <i className="bi bi-linkedin" />
-              </a>
+              <Link href="https://www.instagram.com/daniluquetv/" target="_blank" passHref legacyBehavior>
+                <a href="#" className="instagram">
+                  <i className="bi bi-instagram" />
+                </a>
+              </Link>
+              <Link href="https://www.linkedin.com/in/nicole-geraldine-guzman-garc%C3%ADa-58958a17a/" target="_blank" passHref legacyBehavior>
+                <a href="#" className="linkedin">
+                  <i className="bi bi-linkedin" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
