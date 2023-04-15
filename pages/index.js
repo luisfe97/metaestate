@@ -263,13 +263,13 @@ export default function Home() {
                     <div onClick={handleMintNFT} className="glightbox">
                       <img src="/NFT.png" alt="" />
                       <div className="overlay">
-                        <div className="text">Mint NFT</div>
+                        <div className="text">Become a digital owner</div>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-4 col-mg-6-col-sm-10 info m-2">
-                    <h2>NFT By Metaestate</h2>
-                    <p>NFT de prueba creado por MetaEstate</p>
+                    <h2> digital owner By Metaestate</h2>
+                    <p>Item de prueba creado por MetaEstate</p>
                     <div className="col-md-6 col-8 ">
                       <img src={Eth.src} width={20} className="mr-5" />
                       ETH 0.1
