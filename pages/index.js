@@ -96,28 +96,30 @@ export default function Home() {
         </button>
       </header>
       <section className="animacion">
-        <div className="upper-container">
-          <div className="particulas">
-            <PointSphere />
-          </div>
-          <div className="container d-flex flex-column justify-content-center align-items-center text-center position-absolute" data-aos="zoom-out">
-            <h1>
-              Meta<span>Estate</span>
-            </h1>
-            <p>Transformando ideas en soluciones tecnológicas, apoyando el crecimiento de proyectos en etapas tempranas.</p>
-            <div className="scroll-down">
-              Scroll down<div className="arrow"></div>
+        <div className="d-flex justify-content-center align-items-center position-relative">
+          <div className="upper-container">
+            <div className="particulas">
+              <PointSphere />
+            </div>
+            <div className="container d-flex flex-column justify-content-center align-items-center text-center position-absolute" data-aos="zoom-out">
+              <h1>
+                Meta<span>Estate</span>
+              </h1>
+              <p>Transformando ideas en soluciones tecnológicas, apoyando el crecimiento de proyectos en etapas tempranas.</p>
+              <div className="scroll-down">
+                Scroll down<div className="arrow"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="transition">
-          <div className="lower-container">
-            <div className="div1">El futuro de los bienes raíces está aquí </div>
-            <p className="div2">by unrealengine</p>
+          <div className="transition">
+            <div className="lower-container">
+              <div className="div1">El futuro de los bienes raíces está aquí </div>
+              <p className="div2">by unrealengine</p>
+            </div>
           </div>
-        </div>
-        <div className="following-content">
-          <h1>¡Bienvenido!</h1>
+          <div className="following-content">
+            <h1>¡Bienvenido!</h1>
+          </div>
         </div>
       </section>
 
@@ -126,7 +128,7 @@ export default function Home() {
           <div className="row g-0">
             <div className="col-lg-6 video-play position-relative">
               <Link href="https://drive.google.com/file/d/1AH00e4DIXfvNIaDN3TJmdLhPdhZz4VSs/view?usp=share_link" target="_blank" passHref legacyBehavior>
-                <a href="" className="glightbox play-btn" />
+                <a href="" target="_blank" className="glightbox play-btn" />
               </Link>
             </div>
             <div className="col-lg-6">
@@ -210,7 +212,7 @@ export default function Home() {
                 <h5 className="card-title">RESIDENTIAL</h5>
                 <p className="card-text">Pureblink uses Unreal Engine to visualize real estate</p>
                 <Link href="https://www.youtube.com/watch?v=1L8Zl1djnOw" target="_blank" passHref legacyBehavior>
-                  <a href="" className="btn1">
+                  <a href="" target="_blank" className="btn1">
                     WATCH NOW
                   </a>
                 </Link>
@@ -224,7 +226,7 @@ export default function Home() {
                 <h5 className="card-title">MIXED USE</h5>
                 <p className="card-text">IMERZA transforms real-estate visualization with an XR-based digital twin</p>
                 <Link href="https://www.unrealengine.com/en-US/spotlights/transforming-real-estate-visualization-with-an-xr-based-digital-twin-of-tampa" target="_blank" passHref legacyBehavior>
-                  <a href="" className="btn1">
+                  <a href="" target="_blank" className="btn1">
                     FIND OUT MORE
                   </a>
                 </Link>
@@ -237,8 +239,8 @@ export default function Home() {
               <div className="card-body">
                 <h5 className="card-title">RESIDENTIAL</h5>
                 <p className="card-text">Buildmedias real-time technology helps buyers fall in love with unbuilt homes</p>
-                <Link href="https://www.unrealengine.com/en-US/spotlights/real-time-technology-helps-buyers-fall-in-love-with-unbuilt-homesw" target="_blank" passHref legacyBehavior>
-                  <a href="" className="btn1">
+                <Link href="https://www.unrealengine.com/en-US/spotlights/real-time-technology-helps-buyers-fall-in-love-with-unbuilt-homesw" passHref legacyBehavior>
+                  <a href="" target="_blank" className="btn1">
                     READ NOW
                   </a>
                 </Link>
@@ -259,7 +261,7 @@ export default function Home() {
                 <div className="d-flex row justify-content-center containers mt-5">
                   <div className="col-lg-4 col-mg-6-col-sm-10 img-card m-2">
                     <div onClick={handleMintNFT} className="glightbox">
-                      <img src="https://www.construyehogar.com/wp-content/uploads/2014/06/Plano-de-apartamento-peque%C3%B1o-moderno-Tiziana-Caroleo-en-Pinterest.jpg" alt="" />
+                      <img src="/NFT.png" alt="" />
                       <div className="overlay">
                         <div className="text">Mint NFT</div>
                       </div>
@@ -291,17 +293,17 @@ export default function Home() {
         <div className="contact">
           <div className="tiles-container abs-center">
             <Link href="https://www.linkedin.com/in/nicole-geraldine-guzman-garc%C3%ADa-58958a17a/" target="_blank" passHref legacyBehavior>
-              <a href="" className="contact-tiles facebook">
+              <a href="" target="_blank" className="contact-tiles facebook">
                 LINKEDIN
               </a>
             </Link>
             <Link href="https://www.instagram.com/daniluquetv/" target="_blank" passHref legacyBehavior>
-              <a href="" className="contact-tiles instagram">
+              <a href="" target="_blank" className="contact-tiles instagram">
                 INSTAGRAM
               </a>
             </Link>
             <Link href="mailto: business@contract-sol.com" passHref legacyBehavior>
-              <a href="" className="contact-tiles email">
+              <a href="" target="_blank" className="contact-tiles email">
                 E-MAIL
               </a>
             </Link>
@@ -335,7 +337,7 @@ export default function Home() {
             </div>
             <div className="social-links order-first order-lg-last mb-3 mb-lg-0">
               <Link href="https://www.instagram.com/daniluquetv/" target="_blank" passHref legacyBehavior>
-                <a href="#" className="instagram">
+                <a href="#" target="_blank" className="instagram">
                   <i className="bi bi-instagram" />
                 </a>
               </Link>

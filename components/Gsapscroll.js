@@ -26,7 +26,7 @@ export function Gsapscroll() {
         document.body,
         {
           delay: 0.3,
-          backgroundColor: "#ff88ff",
+          backgroundColor: "#485664",
         },
         "start"
       )
